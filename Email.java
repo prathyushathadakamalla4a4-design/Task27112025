@@ -17,7 +17,9 @@ Read a list of email IDs from the user. Store them in a Set to automatically rem
  */
 public class Email {
     public static void main(String[] args) {
+        // scanner
         Scanner email = new Scanner(System.in);
+        // map concept because list out and visible the emails
         Set<String> unemail = new HashSet<>();
         int df =0;
         System.out.println("---unique email------------");
@@ -30,6 +32,7 @@ public class Email {
             if(input.equalsIgnoreCase("done")){
                 break;
             }
+            // new mail and duplicate email added or duplicate for duplicate why means ++ to verify each and every one upto end
             if(!input.isEmpty()){
                 boolean wasadd = unemail.add(input);
                 if(wasadd){
